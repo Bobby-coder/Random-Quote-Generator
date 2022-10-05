@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --red: #E21717;
+    --white: #ffffff;
+    --grey: #ccc;
+    --blue: #5372F0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+    font-size: 400;
+}
+
+body{
+    background-color: var(--blue);
+}
+
+.container{
+    width: 60rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5rem;
+    background-color: var(--white);
+}
+
+header{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area > i:last-child{
+    display: flex;
+    align-self: flex-end;
+}
+
+.quote{
+    font-size: 2.2rem;
+    text-align: center;
+    word-break: break-all;
+    margin: 0 0.5rem;
+}
+
+.author{
+    align-self: flex-end;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.buttons{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--grey);
+}
+
+
+.features > ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.features > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--blue);
+}
+
+.features > ul > li:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.features > ul > li > i{
+    transform: scale(1.5);
+}
+
+.buttons > button {
+    padding: 1.3rem 2.2rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 3rem;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.loading{
+    opacity: 0.6;
+    pointer-events: none;
+}
