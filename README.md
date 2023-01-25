@@ -1,4 +1,4 @@
-# Random Quote Generator JS
+# Random Quote Generator
 
 ## Demo
 #### Here is a working live demo :  https://random-quote-inventor.netlify.app
